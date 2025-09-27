@@ -1,0 +1,8 @@
+export { default as ArrowRight } from './ArrowRight'
+export { default as Check } from './Check'
+export { default as Menu } from './Menu'
+export { default as SocialInsta } from './SocialInsta'
+export { default as SocialLinkedin } from './SocialLinkedin'
+export { default as SocialPin } from './SocialPin'
+export { default as SocialX } from './SocialX'
+export { default as SocialYoutube } from './SocialYoutube'

@@ -1,0 +1,15 @@
+{
+  "icon": true,
+  "typescript": true,
+  "expandProps": "end",
+  "ref": true,
+  "svgo": true,
+  "svgoConfig": {
+    "plugins": [
+      { "name": "preset-default" },
+      { "name": "removeDimensions", "active": true },
+      { "name": "removeXMLNS", "active": true }
+    ]
+  },
+  "prettier": false
+}

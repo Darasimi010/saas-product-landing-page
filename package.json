@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "icons:clean": "rimraf src/icons",
+    "icons:opt": "svgo -f src/assets/icons",
+    "icons:build": "svgr --ext tsx --out-dir src/icons src/assets/icons",
+    "icons": "npm run icons:opt && npm run icons:clean && npm run icons:build"
   },
   "dependencies": {
     "framer-motion": "^12.23.15",
@@ -17,6 +21,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@svgr/cli": "^8.1.0",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
@@ -24,6 +29,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
+    "rimraf": "^6.0.1",
+    "svgo": "^4.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
