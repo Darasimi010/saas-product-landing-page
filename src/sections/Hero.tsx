@@ -10,16 +10,14 @@ export const Hero = () => {
       <div className="container">
         <div className="md:flex items-center">
           <div className="md:w-[478px]">
-            <div className="text-sm inline-flex px-3 py-1 bg-transparent border border-[#222]/10 rounded-lg tracking-tight">
-              Introducing version 3.2
-            </div>
+            <div className="tag">Introducing version 3.2</div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
-              Turn ambition into achievement
+              Your journey to peak performance
             </h1>
             <p className="text-xl text-[#010D3E] tracking-tight mt-6">
-              Your goals deserve more than sticky notes and scattered apps. Our
-              platform gives you a clear path forward to organize your work,
-              track real progress, and celebrate every milestone along the way.
+              Unlock your potential with a platform built to monitor your
+              growth, inspire consistent action, and highlight every milestone
+              you achieve.
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
               <button className="btn btn-primary">Get started for free</button>
