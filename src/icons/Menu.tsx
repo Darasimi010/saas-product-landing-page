@@ -1,0 +1,6 @@
+import * as React from "react";
+import type { SVGProps } from "react";
+import { Ref, forwardRef } from "react";
+const SvgMenu = (props: SVGProps<SVGSVGElement>, ref: Ref<SVGSVGElement>) => <svg fill="none" viewBox="0 0 20 20" width="1em" height="1em" ref={ref} {...props}><path fill="currentColor" d="M17.813 10.5a.94.94 0 0 1-.938.938H3.125a.938.938 0 0 1 0-1.876h13.75a.937.937 0 0 1 .938.938M3.124 6.438h13.75a.937.937 0 0 0 0-1.875H3.125a.937.937 0 1 0 0 1.875m13.75 8.125H3.125a.938.938 0 0 0 0 1.874h13.75a.938.938 0 0 0 0-1.875" /></svg>;
+const ForwardRef = forwardRef(SvgMenu);
+export default ForwardRef;
