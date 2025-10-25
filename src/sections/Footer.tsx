@@ -9,7 +9,7 @@ import SocialYoutube from "@/icons/SocialYoutube";
 export const Footer = () => {
   return (
     <footer className="bg-black text-[#BCBCBC] text-sm py-10 text-center">
-      <div className="container">
+      <div className="container mx-auto">
         <div className="inline-flex relative before:content-[''] before:w-full before:top-2 before:bottom-0 before:blur before:bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD98,#C2F0B1,#2FD8FE)] before:absolute">
           <Image
             src={logoImage}

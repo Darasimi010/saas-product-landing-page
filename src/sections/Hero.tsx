@@ -7,9 +7,9 @@ import Image from "next/image";
 export const Hero = () => {
   return (
     <section className="pt-8 pb-20 md:pt-5 md:pb-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_100%)] overflow-x-clip">
-      <div className="container">
-        <div className="md:flex items-center gap-4">
-          <div className="md:w-[478px]">
+      <div className="container mx-auto">
+        <div className="md:flex items-center lg:gap-80">
+          <div className="md:w-[478px] lg:min-w-md">
             <div className="tag">Introducing version 3.2</div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
               Your journey to peak performance
