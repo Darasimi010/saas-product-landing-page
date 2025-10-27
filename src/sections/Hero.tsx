@@ -3,8 +3,7 @@ import ArrowRight from "@/icons/ArrowRight";
 import cogImage from "@/assets/cog.png";
 import cylinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
-import Image from "next/image";
-import { easeInOut, motion, useScroll, useTransform } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 
 export const Hero = () => {
@@ -51,7 +50,7 @@ export const Hero = () => {
               transition={{
                 repeat: Infinity,
                 repeatType: "mirror",
-                ease: easeInOut,
+                ease: "easeInOut",
                 duration: 3,
               }}
             />
