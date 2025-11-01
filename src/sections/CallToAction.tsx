@@ -28,16 +28,16 @@ export const CallToAction = () => {
           <motion.img
             src={springImage.src}
             alt="Spring image"
-            width={360}
-            height={360}
+            width={300}
+            height={300}
             className="hidden md:block absolute -right-[331px] -top-[19px]"
             style={{ translateY }}
           />
           <motion.img
             src={starImage.src}
             alt="Star image"
-            width={360}
-            height={360}
+            width={300}
+            height={300}
             className="hidden md:block absolute -left-[350px] -top-[137px]"
             style={{ translateY }}
           />
