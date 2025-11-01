@@ -1,5 +1,7 @@
+"use client";
 import CheckIcon from "@/icons/Check";
 import { twMerge } from "tailwind-merge";
+import { motion } from "motion/react";
 
 const pricingTiers = [
   {
@@ -95,9 +97,18 @@ export const Pricing = () => {
                       className="inline-flex text-sm px-4 py-1.5 rounded-xl
                   border border-white/20"
                     >
-                      <span className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] text-transparent bg-clip-text font-medium">
+                      <motion.span
+                        animate={{ backgroundPositionX: "100%" }}
+                        transition={{
+                          repeat: Infinity,
+                          ease: "linear",
+                          repeatType: "loop",
+                          duration: 2,
+                        }}
+                        className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)] [background-size:200%] text-transparent bg-clip-text font-medium"
+                      >
                         Popular
-                      </span>
+                      </motion.span>
                     </div>
                   )}
                 </div>
@@ -124,7 +135,10 @@ export const Pricing = () => {
                 </button>
                 <ul className="flex flex-col gap-5 mt-8">
                   {features.map((feature, index) => (
-                    <li key={`${title}-feature-${index}`} className="flex text-sm items-center gap-4">
+                    <li
+                      key={`${title}-feature-${index}`}
+                      className="flex text-sm items-center gap-4"
+                    >
                       <CheckIcon className="w-6 h-6" />
                       <span>{feature}</span>
                     </li>
