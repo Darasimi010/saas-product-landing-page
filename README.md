@@ -62,5 +62,3 @@ saas-product-landing-page/
 ## Author
 
 - [Darasimi010](https://github.com/Darasimi010)
-
----
